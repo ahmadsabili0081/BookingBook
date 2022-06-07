@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+h1{
+  text-align: center;
+}
+.apps__book{
+  width: 800px;
+  height: auto;
+  padding: 10px;
+  margin: 50px auto;
+}
+.apps__book .form__book{
+  font-family: 'Poppins', sans-serif;
+}
+label{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+button.btn{
+  width: 100%;
+  margin: 40px 0px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+@media screen and (max-width:570px) {
+  .container{
+    width: 100%;
+  }
+  .container .apps__book{
+    width: 100%;
+  }
+}
