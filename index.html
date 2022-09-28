@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Book List</title>
-    <meta name="keywords" content ="HTML,CSS,JAVASCRIPT">
-    <meta http-equiv="refresh" content="500">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <meta name="keywords" content="HTML,CSS,JAVASCRIPT" />
+    <meta http-equiv="refresh" content="500" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   </head>
   <body>
     <div class="container">
-      <h1 class="display-4 mt-4"><i class="fas fa-book-open text-primary"></i>Book Booking <span class="text-secondary">List</span> </h1>
-    <div class="apps__book">
-      <form class="form__book">
-        <div class="form-group">
-          <label for="title">Judul</label>
-          <input type="text"  value="" class="form-control title" placeholder="Input Title">
-        </div>
-        <div class="form-group  mt-3">
-          <label for="penerbit">Penerbit</label>
-          <input type="text" value="" class="form-control penerbit" placeholder="Input Penerbit">
-        </div>
-        <div class="form-group  mt-3">
-          <label for="time__book">Waktu Booking</label>
-          <input type="date" value="" class="form-control time__book">
-        </div>
-        <button class="btn btn__submit btn-lg btn-secondary" type="submit">Booking Book</button>
-      </form>
-      <table class="table table-stripped mt-5">
-        <thead>
-          <tr>
-            <th>Judul</th>
-            <th>Penerbit</th>
-            <th>Waktu Booking</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody id="book-list">
-
-        </tbody >
-      </table>
+      <h1 class="display-4 mt-4">
+        <i class="fas fa-book-open text-primary"></i>Book Booking
+        <span class="text-secondary">List</span>
+      </h1>
+      <div class="apps__book">
+        <form class="form__book">
+          <div class="form-group">
+            <label for="title">Judul</label>
+            <input
+              type="text"
+              value=""
+              class="form-control title"
+              placeholder="Input Title"
+            />
+          </div>
+          <div class="form-group mt-3">
+            <label for="penerbit">Penerbit</label>
+            <input
+              type="text"
+              value=""
+              class="form-control penerbit"
+              placeholder="Input Penerbit"
+            />
+          </div>
+          <div class="form-group mt-3">
+            <label for="time__book">Waktu Booking</label>
+            <input type="date" value="" class="form-control time__book" />
+          </div>
+          <button class="btn btn__submit btn-lg btn-secondary" type="submit">
+            Booking Book
+          </button>
+        </form>
+        <table class="table table-stripped mt-5">
+          <thead>
+            <tr>
+              <th>Judul</th>
+              <th>Penerbit</th>
+              <th>Tanggal Booking</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody class="book-list"></tbody>
+        </table>
+      </div>
     </div>
-    </div>
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
